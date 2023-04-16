@@ -91,6 +91,9 @@ picture{
       
 }
 
+details{
+   width: 20rem;
+}
 
 details[open] summary p{
     font-weight: var(--fw-bold);
