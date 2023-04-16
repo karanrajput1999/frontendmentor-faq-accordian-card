@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+    --desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    
+    /* Typography colors */
+    --dark-grayish-blue: hsl(237, 12%, 33%);
+    --grayish-blue:hsl(240, 6%, 50%);
+
+    --light-grayish-blue: hsl(240, 5%, 91%);
+    --border-blue: hsl(240, 5%, 80%);
+
+    /* gradient colors */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+    /* font weights */
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+
+/* resets */
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+image,picture{
+    max-width: 100%;
+    display: block;
+}
+
+
+body{
+    background: linear-gradient(var(--soft-violet), var(--soft-blue) );
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 0.75rem;
+    font: inherit;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    user-select: none;
+}
+
+
+/* utility classes */
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+.container{
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+/* components */
+.card-component{
+    max-width: 23rem;
+    border-radius: 30px;
+    background-color: var(--light-grayish-blue);
+    font-family: 'Kumbh Sans', sans-serif;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin-top: 10rem;
+}
+
+picture{
+    position: absolute;
+    top: -6.8rem;
+}
+.mobile-bg-container{ 
+    transform: translateY(-5rem); 
+}
+
+.faq-container{
+    margin-top: 7rem;
+    padding-bottom: 3rem;
+    color: var(--dark-grayish-blue);
+      
+}
+
+
+details[open] summary p{
+    font-weight: var(--fw-bold);
+}
+details[open] summary img{
+    transform: rotate(180deg);
+}
+
+
+.faq-container > h1{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.faq-heading{
+    font-size: 2rem;
+    font-weight: var(--fw-bold);
+    color: var(--desaturated-blue);
+}
+
+.faq-title{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--border-blue);
+    cursor: pointer;
+}
+
+.faq-title > img{
+    padding: .5rem;
+    margin-left: auto;
+}
+
+.faq-text{
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--border-blue);
+
+}
